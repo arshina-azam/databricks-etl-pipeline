@@ -1,4 +1,4 @@
-0# E-Commerce Data Engineering Pipeline
+# E-Commerce Data Engineering Pipeline
 
 ## Project Overview
 An end-to-end E-Commerce Data Engineering project built using
