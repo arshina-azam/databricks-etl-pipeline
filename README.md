@@ -1,51 +1,117 @@
 # 🚀 End-to-End ETL Pipeline Using Databricks
 
 ## 📌 Project Overview
-This project demonstrates an end-to-end ETL (Extract, Transform, Load) pipeline using Python, PySpark, and Databricks.
 
-The pipeline processes employee data through Bronze, Silver, and Gold layers to improve data quality and generate meaningful business insights.
+This project demonstrates an end-to-end ETL
+(Extract, Transform, Load) pipeline using Python,
+PySpark, and Databricks.
+
+The pipeline processes employee data through
+Bronze, Silver, and Gold layers to improve data
+quality and generate meaningful business insights.
 
 ## 🛠️ Technologies Used
+
 - Python
 - PySpark
+- Apache Spark
 - Databricks
-- SQL
+- Spark SQL
 - Delta Lake
+
+## 🏗️ Project Architecture
+
+The pipeline follows a Medallion Architecture:
+
+### 🥉 1. Bronze Layer — Raw Data
+
+- Stores the initial employee dataset.
+- Preserves raw employee records.
+- Acts as the source for downstream transformations.
+
+### 🥈 2. Silver Layer — Cleaned Data
+
+- Removes extra spaces using `trim()`.
+- Removes duplicate records using `dropDuplicates()`.
+- Improves data quality before further processing.
+
+### 🥇 3. Gold Layer — Business Insights
+
+Generates department-wise summary metrics:
+
+- Total employees
+- Total salary
+- Average salary
+
+These metrics help demonstrate basic business
+reporting using Spark DataFrames.
 
 ## 🔄 ETL Workflow
 
-### 1. Bronze Layer
-- Loads raw employee data.
-- Stores the initial dataset.
+1. Create employee sample data.
+2. Load raw data into the Bronze Layer.
+3. Clean text columns and remove duplicate rows.
+4. Store the cleaned data in the Silver Layer.
+5. Aggregate employee data by department.
+6. Store the results in the Gold Layer.
+7. Validate record counts and inspect final output.
 
-### 2. Silver Layer
-- Cleans and transforms employee data.
-- Removes duplicate records.
-- Handles data quality issues.
+## 📊 Final Results
 
-### 3. Gold Layer
-- Aggregates employee data by department.
-- Calculates employee counts.
-- Calculates total and average salaries.
+| Layer | Records / Groups |
+|-------|------------------|
+| Bronze | 5 records |
+| Silver | 4 records |
+| Gold | 3 departments |
 
-## 📊 Key Features
-- Data cleaning and transformation
-- Bronze, Silver, and Gold architecture
-- Department-wise salary analysis
-- ETL pipeline validation
+### Gold Layer Summary
 
-## 📁 Project Files
-- `End-to-End ETL Pipeline Project.ipynb` — Main project notebook
-- `End_to_end_EL_Project.ipynb` — Additional notebook
+| Department | Total Employees | Total Salary | Average Salary |
+|------------|----------------:|-------------:|---------------:|
+| IT | 2 | 65000 | 32500 |
+| HR | 1 | 25000 | 25000 |
+| Finance | 1 | 40000 | 40000 |
 
 ## ✅ Validation
-The pipeline includes validation checks to verify the processed data.
 
-## 🎯 Learning Outcomes
-- Understanding ETL pipeline architecture
-- Working with PySpark and Databricks
-- Building data transformation workflows
-- Performing data aggregation and validation
+The basic ETL validation completed successfully.
+
+- Bronze record count: 5
+- Silver record count: 4
+- Gold department count: 3
+- Validation status: PASSED
+
+The validation checks record counts and confirms
+that the expected Gold Layer output is available.
+
+## 📁 Project Files
+
+- `End-to-End ETL Pipeline Project.ipynb`
+- `End_o_end_ETL_Project.ipynb`
+- `README.md`
+
+The notebooks contain the implementation and
+outputs of the ETL pipeline.
+
+## 🎯 Key Learning Outcomes
+
+- Understanding ETL pipeline development.
+- Working with PySpark DataFrames.
+- Implementing data cleaning and deduplication.
+- Using Bronze, Silver, and Gold data layers.
+- Performing group-by aggregations.
+- Saving and reading tables in Databricks.
+- Validating pipeline output.
 
 ## 👩‍💻 Author
-Arshina Azam
+
+**Arshina Azam**
+
+B.Tech in Computer Science and Engineering
+
+GitHub: https://github.com/arshina-azam
+
+---
+
+⭐ If you find this project useful, consider
+starring the repository!
