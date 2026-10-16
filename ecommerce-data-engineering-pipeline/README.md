@@ -1,4 +1,4 @@
-# E-Commerce Data Engineering Pipeline
+0# E-Commerce Data Engineering Pipeline
 
 ## Project Overview
 An end-to-end E-Commerce Data Engineering project built using
@@ -58,3 +58,6 @@ Gold Layer - Business Analytics
 - Aggregations and revenue calculations
 - Bronze, Silver, and Gold architecture
 - Delta table creation and validation
+## Project Notebook
+
+[View E-Commerce Data Engineering Notebook](../Ecommerce_Data_Engineering_Pipeline.ipynb)
