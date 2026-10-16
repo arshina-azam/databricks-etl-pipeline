@@ -122,3 +122,10 @@ starring the repository!
 
 ### Gold Layer Output
 ![Gold Layer](screenshots/gold-layer.png)
+## 📸 Project Output
+
+### ETL Pipeline Validation
+![ETL Validation](etl-validation.png)
+
+### Gold Layer Output
+![Gold Layer](gold-layer.png)
