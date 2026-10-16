@@ -115,3 +115,10 @@ GitHub: https://github.com/arshina-azam
 
 ⭐ If you find this project useful, consider
 starring the repository!
+## Project Output
+
+### ETL Pipeline Validation
+![ETL Validation](screenshots/etl-validation.png)
+
+### Gold Layer Output
+![Gold Layer](screenshots/gold-layer.png)
