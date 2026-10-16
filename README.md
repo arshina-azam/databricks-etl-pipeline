@@ -84,11 +84,12 @@ The basic ETL validation completed successfully.
 The validation checks record counts and confirms
 that the expected Gold Layer output is available.
 
-## 📁 Project Files
+## 📂 Project Files
 
-- `End-to-End ETL Pipeline Project.ipynb`
-- `End_o_end_ETL_Project.ipynb`
-- `README.md`
+- [ETL Pipeline Notebook (.ipynb)](./End-to-End%20ETL%20Pipeline%20Project.ipynb)
+- [Project Documentation (README)](./README.md)
+- [ETL Validation Screenshot](./etl-validation.png)
+- [Gold Layer Screenshot](./gold-layer.png)
 
 The notebooks contain the implementation and
 outputs of the ETL pipeline.
