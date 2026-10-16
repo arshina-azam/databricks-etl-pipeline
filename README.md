@@ -115,7 +115,6 @@ GitHub: https://github.com/arshina-azam
 
 ⭐ If you find this project useful, consider
 starring the repository!
-## Project Output
 
 
 ## 📸 Project Output
