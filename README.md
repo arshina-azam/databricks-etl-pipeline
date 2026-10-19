@@ -125,3 +125,37 @@ starring the repository!
 
 ### Gold Layer Output
 ![Gold Layer](gold-layer.png)
+# E-commerce Data Engineering Pipeline — 100K Records
+
+## Project Overview
+Built a scalable data engineering pipeline using PySpark and Databricks Free Edition to process 100,000 synthetic e-commerce records through Bronze, Silver, and Gold layers.
+
+## Technologies Used
+- Python
+- PySpark
+- Databricks Free Edition
+- Spark DataFrames
+- Delta/managed tables (where supported by the configured table format)
+
+## Pipeline Results
+
+| Layer | Records |
+|---|---:|
+| Bronze | 100,000 |
+| Silver | 83,469 |
+| Silver Rejected | 16,531 |
+| Gold | 70,180 |
+| Gold Rejected | 13,289 |
+
+## Key Features
+- Processed 100,000 synthetic records.
+- Applied data quality filtering across pipeline layers.
+- Separated rejected records for inspection.
+- Created Gold-layer data for downstream analytics.
+- Validated record counts and reconciliation between layers.
+
+## Data Quality Validation
+All data quality validations passed successfully.
+
+## Business Value
+The pipeline demonstrates layered data processing, data quality checks, rejected-record handling, and preparation of analytics-ready datasets.
